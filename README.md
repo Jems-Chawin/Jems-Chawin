@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Jems</h1>
-<h3 align="center">I'm a Computer Engineering student at KMITL with a passion for Data Science, Artificial Intelligence, Machine Learning, and Software Development.</h3>
+<h3 align="center">I'm an AI Engineer with a passion to all things AI related.</h3>
 
 <h3 align="center">Connect with me:</h3>
 <div align="center"> <a href="https://linkedin.com/in/chawin-sriviset" target="blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="chawin sriviset" height="30" /></a> <a href="https://fb.com/chawin.sriviset" target="blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="chawin sriviset" height="30" /></a> <a href="https://instagram.com/jemssss_s" target="blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="jemssss_s" height="30" /></a> <a href="https://www.leetcode.com/jamechawin" target="blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="jamechawin" height="30" /></a> </div>
