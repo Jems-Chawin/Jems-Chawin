@@ -1,17 +1,51 @@
-<h1 align="center">Hi 👋, I'm Jems</h1>
-<h3 align="center">I'm an AI Engineer with a passion to all things AI related.</h3>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg">
+  <img src="assets/hero-light.svg" width="100%" alt="Hi, I'm Jems. Chawin Sriviset, AI Engineer in Thailand. I teach cameras to notice things. Lately, also agents and robots.">
+</picture>
 
-<h3 align="center">Connect with me:</h3>
-<div align="center"> <a href="https://linkedin.com/in/chawin-sriviset" target="blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="chawin sriviset" height="30" /></a> <a href="https://fb.com/chawin.sriviset" target="blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="chawin sriviset" height="30" /></a> <a href="https://instagram.com/jemssss_s" target="blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="jemssss_s" height="30" /></a> <a href="https://www.leetcode.com/jamechawin" target="blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="jamechawin" height="30" /></a> </div>
-
-<h3 align="center">Languages and Tools:</h3>
-<div align="center"> <a href="https://www.arduino.cc/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="arduino" height="40"/> </a> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" height="40"/> </a> <a href="https://expressjs.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" height="40"/> </a> <a href="https://firebase.google.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" height="40"/> </a> <a href="https://flutter.dev" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg" alt="flutter" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" height="40"/> </a> <a href="https://opencv.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg" alt="opencv" height="40"/> </a> <a href="https://pandas.pydata.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg" alt="pandas" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" height="40"/> </a> <a href="https://pytorch.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="pytorch" height="40"/> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" height="40"/> </a> <a href="https://scikit-learn.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit_learn" height="40"/> </a> <a href="https://seaborn.pydata.org/" target="_blank" rel="noreferrer"> <img src="https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" alt="seaborn" height="40"/> </a> <a href="https://www.tensorflow.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" height="40"/> </a> </div>
+I got into this through computer vision: cameras pointed at a factory gate, a crane or a highway, and code that has to keep running after everyone has gone home. These days I also spend a lot of my time on evaluation, LLM agents and robot simulation.
 
 <p align="center">
-  <img src="https://github-stats-extended.vercel.app/api/top-langs?username=jems-chawin&show_icons=true&locale=en&layout=compact&theme=dark" alt="jems-chawin" />
-  <img src="https://github-stats-extended.vercel.app/api?username=jems-chawin&show_icons=true&locale=en&theme=dark" alt="jems-chawin" />
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/vision-dark.svg"><img src="assets/vision-light.svg" width="49%" alt="Computer vision: three objects being detected and tracked"></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/eval-dark.svg"><img src="assets/eval-light.svg" width="49%" alt="Data and evaluation: precision and recall curves on a clean test set"></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/agent-dark.svg"><img src="assets/agent-light.svg" width="49%" alt="LLM agents: plan, call tools, check sources, answer"></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/sim-dark.svg"><img src="assets/sim-light.svg" width="49%" alt="Robotics and simulation: a wireframe greenhouse with a robot driving the aisles"></picture>
 </p>
 
+### Stack
+
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=jems-chawin&" alt="jems-chawin" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=python%2Cpytorch%2Copencv%2Cfastapi%2Cdocker%2Cgo%2Cpostgres%2Credis%2Cnextjs%2Cthreejs%2Cblender%2Cgcp%2Clinux%2Cgit&perline=14&theme=dark">
+    <img src="https://skillicons.dev/icons?i=python%2Cpytorch%2Copencv%2Cfastapi%2Cdocker%2Cgo%2Cpostgres%2Credis%2Cnextjs%2Cthreejs%2Cblender%2Cgcp%2Clinux%2Cgit&perline=14&theme=light" width="100%" alt="Python, PyTorch, OpenCV, FastAPI, Docker, Go, PostgreSQL, Redis, Next.js, Three.js, Blender, Google Cloud, Linux, Git">
+  </picture>
+</p>
+
+<details>
+<summary>Things that don't have a logo</summary>
+<br>
+
+| Track | Tools |
+|---|---|
+| Computer vision | YOLO · RF-DETR · pose models · tracking · PaddleOCR · ONNX / CoreML |
+| Data & evaluation | benchmark design · test-set leak checks |
+| LLM & agents | Google ADK · Gemini · Whisper · Qwen3 · Cloud Run |
+| Robotics & simulation | Isaac Sim · synthetic data |
+
+</details>
+
+### Some results
+
+- 🤖 7 computer vision systems shipped to production
+- 🥇 AMD Developer Hackathon ACT II, team 1st place and Best Solution
+- 🥈 SuperAI Season 5, Silver Medal
+- 🎓 B.Eng. Computer Engineering, KMITL, Second Class Honours
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Jems-Chawin/Jems-Chawin/output/snake-dark.svg">
+  <img src="https://raw.githubusercontent.com/Jems-Chawin/Jems-Chawin/output/snake.svg" width="100%" alt="My contribution calendar drawn as a snake game">
+</picture>
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/chawin-sriviset/">LinkedIn</a> · <a href="mailto:chawinsriviset@gmail.com">chawinsriviset@gmail.com</a>
 </p>
