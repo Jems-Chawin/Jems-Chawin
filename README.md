@@ -52,5 +52,5 @@ I got into this through computer vision: cameras pointed at a factory gate, a cr
 </picture>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/chawin-sriviset/">LinkedIn</a> · <a href="mailto:chawinsriviset@gmail.com">chawinsriviset@gmail.com</a>
+  <a href="https://chawin-sriviset.vercel.app">Portfolio</a> · <a href="https://www.linkedin.com/in/chawin-sriviset/">LinkedIn</a> · <a href="mailto:chawinsriviset@gmail.com">chawinsriviset@gmail.com</a>
 </p>
