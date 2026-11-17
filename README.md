@@ -12,6 +12,11 @@ I got into this through computer vision: cameras pointed at a factory gate, a cr
   <picture><source media="(prefers-color-scheme: dark)" srcset="assets/sim-dark.svg"><img src="assets/sim-light.svg" width="49%" alt="Robotics and simulation: a wireframe greenhouse with a robot driving the aisles"></picture>
 </p>
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/merge-dark.svg">
+  <img src="assets/merge-light.svg" width="100%" alt="Model merging: the weights of two fine-tuned models slide together and are averaged into one">
+</picture>
+
 ### Stack
 
 <p align="center">

@@ -236,7 +236,66 @@ def simulation(t):
                 "Robotics and simulation: a wireframe greenhouse with a robot driving the aisles.", style, "".join(body))
 
 
-BUILDERS = dict(hero=hero, vision=vision, eval=evaluation, agent=agent, sim=simulation)
+# ---------------------------------------------------------------- merge
+
+def merge(t):
+    """Two weight grids slide together and become one: 0.5*A + 0.5*B."""
+    import random
+    W, H = 840, 190
+    ca, cb = t["cv"], t["ag"]
+    rng = random.Random(3)
+    cols, rows, cell, gap = 7, 4, 18, 4
+    gw = cols * (cell + gap) - gap
+    wa = [[rng.uniform(.15, 1) for _ in range(cols)] for _ in range(rows)]
+    wb = [[rng.uniform(.15, 1) for _ in range(cols)] for _ in range(rows)]
+    mid, top, shift = (W - gw) / 2, 62, 230
+
+    def grid(x, layers):
+        out = []
+        for r in range(rows):
+            for c in range(cols):
+                for colour, w in layers:
+                    out.append(f'<rect x="{x + c * (cell + gap):.0f}" y="{top + r * (cell + gap)}" width="{cell}" '
+                               f'height="{cell}" rx="3" fill="{colour}" fill-opacity="{w[r][c]:.2f}"/>')
+        return "".join(out)
+
+    style = (
+        f".k{{font:600 12px {MONO};fill:{t['fg']};letter-spacing:.04em}}"
+        f".q{{font:400 11px {MONO};fill:{t['muted']}}}"
+        f".f{{font:600 14px {MONO};fill:{t['fg']}}}"
+        ".a{animation:a 10s ease-in-out infinite}.b{animation:b 10s ease-in-out infinite}"
+        f"@keyframes a{{0%,12%{{transform:translateX(-{shift}px);opacity:1}}42%{{transform:translateX(0);opacity:1}}"
+        f"50%,92%{{transform:translateX(0);opacity:0}}100%{{transform:translateX(-{shift}px);opacity:0}}}}"
+        f"@keyframes b{{0%,12%{{transform:translateX({shift}px);opacity:1}}42%{{transform:translateX(0);opacity:1}}"
+        f"50%,92%{{transform:translateX(0);opacity:0}}100%{{transform:translateX({shift}px);opacity:0}}}}"
+        ".m{transform-box:fill-box;transform-origin:center;animation:m 10s ease-out infinite}"
+        "@keyframes m{0%,42%{opacity:0;transform:scale(.9)}50%{opacity:1;transform:scale(1.06)}"
+        "56%,92%{opacity:1;transform:scale(1)}100%{opacity:0;transform:scale(1)}}"
+        ".plus{animation:plus 10s linear infinite}@keyframes plus{0%,10%{opacity:1}30%,100%{opacity:0}}"
+        ".res{animation:res 10s linear infinite}@keyframes res{0%,50%{opacity:0}56%,92%{opacity:1}100%{opacity:0}}"
+    )
+    cx = W / 2
+    body = [
+        f'<rect x=".5" y=".5" width="{W - 1}" height="{H - 1}" rx="10" fill="{t["soft"]}" stroke="{t["edge"]}"/>',
+        f'<circle cx="20" cy="21" r="5" fill="{ca}"/><circle cx="29" cy="21" r="5" fill="{cb}" fill-opacity=".85"/>',
+        f'<text class="k" x="44" y="25">model merging</text>',
+        f'<text class="q" x="{W - 16}" y="25" text-anchor="end">lately</text>',
+        f'<line x1="1" y1="38" x2="{W - 1}" y2="38" stroke="{t["edge"]}"/>',
+        f'<g class="a">{grid(mid, [(ca, wa)])}<text class="q" x="{cx}" y="{top + 106}" text-anchor="middle">fine-tune A</text></g>',
+        f'<g class="b">{grid(mid, [(cb, wb)])}<text class="q" x="{cx}" y="{top + 106}" text-anchor="middle">fine-tune B</text></g>',
+        f'<text class="f plus" x="{cx}" y="{top + 48}" text-anchor="middle">+</text>',
+        f'<g class="m">{grid(mid, [(t["ev"], [[(x + y) / 2 for x, y in zip(ra, rb)] for ra, rb in zip(wa, wb)])])}</g>',
+        f'<text class="f res" x="{cx}" y="{top + 108}" text-anchor="middle">merged = 0.5·A + 0.5·B</text>',
+        f'<text class="q res" x="{cx + gw / 2 + 28}" y="{top + 38}">no new data</text>',
+        f'<text class="q res" x="{cx + gw / 2 + 28}" y="{top + 56}">no extra training</text>',
+        f'<text class="q res" x="{cx - gw / 2 - 28}" y="{top + 38}" text-anchor="end">same architecture</text>',
+        f'<text class="q res" x="{cx - gw / 2 - 28}" y="{top + 56}" text-anchor="end">same starting point</text>',
+    ]
+    return svg(W, H, "Model merging: the weights of two fine-tuned models slide together and are averaged into one.",
+               style, "\n".join(body))
+
+
+BUILDERS = dict(hero=hero, vision=vision, eval=evaluation, agent=agent, sim=simulation, merge=merge)
 
 if __name__ == "__main__":
     out = Path(__file__).resolve().parent.parent / "assets"
