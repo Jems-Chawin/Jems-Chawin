@@ -3,8 +3,6 @@
   <img src="assets/hero-light.svg" width="100%" alt="Hi, I'm Jems. Chawin Sriviset, AI Engineer in Thailand. I teach cameras to notice things. Lately, also agents and robots.">
 </picture>
 
-I got into this through computer vision: cameras pointed at a factory gate, a crane or a highway, and code that has to keep running after everyone has gone home. These days I also spend a lot of my time on evaluation, LLM agents and robot simulation.
-
 <p align="center">
   <picture><source media="(prefers-color-scheme: dark)" srcset="assets/vision-dark.svg"><img src="assets/vision-light.svg" width="49%" alt="Computer vision: three people being detected and tracked, each with an id and a confidence score"></picture>
   <picture><source media="(prefers-color-scheme: dark)" srcset="assets/eval-dark.svg"><img src="assets/eval-light.svg" width="49%" alt="Data and evaluation: precision and recall curves on a clean test set"></picture>
